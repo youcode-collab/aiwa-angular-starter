@@ -12,6 +12,28 @@ Ce kit de démarrage vise à :
 *   Mettre en place des polices personnalisées (Helvetica Now Text).
 *   Offrir un point de départ simple avec une page d'accueil et une page 404.
 
+```.
+├── angular.json                # Configuration du CLI Angular
+├── package.json                # Dépendances et scripts NPM
+├── tailwind.config.js          # Configuration de Tailwind CSS
+├── postcss.config.js           # Configuration de PostCSS (utilisé par Tailwind)
+├── tsconfig.json               # Configuration TypeScript globale
+├── README.md                   # Ce fichier de documentation
+└── src/                        # Code source de l'application
+    ├── main.ts                 # Point d'entrée principal de l'application
+    ├── index.html              # Fichier HTML principal
+    ├── styles.css              # Styles globaux (inclut les imports Tailwind)
+    ├── app/                    # Cœur de l'application Angular
+    │   ├── app-routing.module.ts # Configuration du routage principal
+    │   ├── app.component.*     # Composant racine de l'application
+    │   ├── app.module.ts       # Module racine de l'application
+    │   └── pages/              # Composants représentant les pages
+    │       ├── home/           # Composant de la page d'accueil
+    │       └── not-found/      # Composant de la page 404
+    └── assets/                 # Fichiers statiques
+        ├── logo.png            # Logo AIWA
+        └── font/               # Polices personnalisées```
+
 ## Prérequis
 
 Avant de commencer, assurez-vous d'avoir installé les outils suivants sur votre machine :
