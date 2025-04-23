@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@font-face {
+  font-family: "Helvetica";
+  src: url("assets/font/helveticanowtext-black-demo.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica-bold";
+  src: url("assets/font/helveticanowtext-bold-demo.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-italic";
+  src: url("assets/font/helveticanowtext-blackitalic-demo.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica-bold-italic";
+  src: url("assets/font/helveticanowtext-bolditalic-demo.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.font-helvetica {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.font-helvetica-bold {
+  font-family: 'Helvetica-bold', sans-serif;
+}
+
+.font-helvetica-italic {
+  font-family: 'Helvetica-italic', sans-serif;
+}
+
+.font-helvetica-bold-italic {
+  font-family: 'Helvetica-bold-italic', sans-serif;
+}
+
+.aiwa-bg {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: radial-gradient(
+      circle at center,
+      rgba(255, 0, 255, 0.4) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      #0a0024 0%,
+      #24004d 25%,
+      #8a2be2 50%,
+      #ff00ff 65%,
+      #ff0080 75%,
+      #ff4500 90%
+    );
+  background-blend-mode: screen;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
